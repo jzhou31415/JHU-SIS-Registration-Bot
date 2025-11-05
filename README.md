@@ -12,7 +12,7 @@ Make sure your Google Chrome is also up to date. Then download the file ``SIS_bo
 2. Change the Time Server (under 'Sync Now' for Windows) from the default to "tick.usno.navy.mil"
 3. Save changes and exit
 
-If the file is throwing errors when running install ``chromedriver`` using a package installer such as Chocolatey (Chocolatey: [Windows](https://chocolatey.org/install#install-step1), Homebrew: [MacOS](https://brew.sh/)) with the following commands:
+If the file is throwing errors when running, install ``chromedriver`` using a package installer such as Chocolatey (Chocolatey: [Windows](https://chocolatey.org/install#install-step1), Homebrew: [MacOS](https://brew.sh/)) with the following commands:
 
 Chocolatey: ```choco install chromedriver```
 
@@ -26,4 +26,4 @@ Replacing "path to SIS_bot.py" with the actual path which on windows looks like 
     python "C:\Users\USERNAME\Downloads\SIS_Bot.py"
 Now you can sit back and wait while the bot while automatically register you for all of your classes at 7:00 AM
 
-Or simply launch the .py file.
+Or simply launch the ``.py`` file.
