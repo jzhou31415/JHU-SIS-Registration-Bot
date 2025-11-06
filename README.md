@@ -13,7 +13,7 @@ Make sure your Google Chrome is also up to date. Then download the file ``SIS_bo
 3. Save changes and exit
 
 ## Usage
-Make sure all of your classes are already in your SIS cart before running using. Then run the following command in Command Prompt/Terminal at least 1 minute (ideally 5 minutes) before 7:00 AM on registration day
+Make sure all of your classes are already in your SIS cart before running using. Then run the following command in Command Prompt/Terminal on registration day at least 1 minute (ideally 5 minutes) before 7:00 AM on registration day
 
     python "path to SIS_bot.py"
 Replacing "path to SIS_bot.py" with the actual path which on windows looks like the following:
