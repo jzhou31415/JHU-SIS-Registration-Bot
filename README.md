@@ -1,7 +1,7 @@
 # JHU SIS Registration Bot
 Up to date Selenium based registration bot for JHU SIS course registration, registering for courses right as the clock turns 7:00 AM. This bot will also add you to any waitlist for classes that are unavailable.
 ## Setup
-Download Python 3 ([Windows](https://www.python.org/downloads/windows/), [MacOS](https://www.python.org/downloads/macos/))
+Download Python 3 ([Windows](https://www.python.org/downloads/windows/), [MacOS](https://www.python.org/downloads/macos/)) if you do not have it already installed.
 
 Run the following in Powershell with Admin privileges (Windows) or Terminal (MacOS):
 
