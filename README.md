@@ -19,6 +19,8 @@ Make sure all of your classes are already in your SIS cart before running using.
 Replacing "path to SIS_bot.py" with the actual path which on windows looks like the following:
 
     python "C:\Users\USERNAME\Downloads\SIS_Bot.py"
-Now, you can sit back and wait while the bot while automatically register you for all of your classes at 7:00 AM
 
 Or simply launch the ``.py`` file.
+
+Now, you can sit back and wait while the bot while automatically register you for all of your classes at 7:00 AM
+
