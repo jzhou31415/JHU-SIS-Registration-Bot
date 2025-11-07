@@ -3,7 +3,7 @@ Up to date Selenium based registration bot for JHU SIS course registration, regi
 ## Setup
 Download Python 3 ([Windows](https://www.python.org/downloads/windows/), [MacOS](https://www.python.org/downloads/macos/)) if you do not have it already installed.
 
-Run the following in Powershell with Admin privileges (Windows) or Terminal (MacOS):
+Run the following in Powershell/Command Terminal (Windows) or Terminal (MacOS):
 
     pip install -U selenium
 
