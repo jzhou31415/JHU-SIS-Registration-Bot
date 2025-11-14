@@ -20,7 +20,7 @@ Replacing "path to SIS_bot.py" with the actual path which on windows looks like 
 
     python "C:\Users\USERNAME\Downloads\SIS_Bot.py"
 
-Or simply launch the ``.py`` file.
+Or simply launch the ``.py`` file using Python.
 
 May not work with two-factor authentication enabled.
 
