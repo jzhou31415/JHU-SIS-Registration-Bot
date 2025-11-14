@@ -9,7 +9,7 @@ Run the following in Powershell/Command Terminal (Windows) or Terminal (MacOS):
 
 Make sure your Google Chrome is also up to date. Then download the file ``SIS_bot.py`` . Next we have to change our computer's clock to be in sync with US Naval Time which is what SIS uses.
 1. Go to settings and then date & time settings
-2. Change the Time Server (under 'Sync Now' for Windows) from the default to "tick.usno.navy.mil"
+2. Change the Time Server (under 'Sync Now' for Windows) from the default to ``tick.usno.navy.mil``
 3. Save changes and exit
 
 ## Usage
