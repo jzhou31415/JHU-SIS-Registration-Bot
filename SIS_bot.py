@@ -48,7 +48,7 @@ while True:
     except:
         pass
     if curr_time >= registration_time:
-        print("Executing")
+        print("Registering")
         register_button.click()
         while True:
             if (driver.find_element(By.ID, "ctl00_contentPlaceHolder_lblWaitlist")):
