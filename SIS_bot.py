@@ -51,10 +51,10 @@ while True:
         print("Executing")
         register_button.click()
         while True:
-            if (driver.find_element(By.ID, "ctl00_contentPlaceHolder_rbWaitlistYes")):
+            if (driver.find_element(By.ID, "ctl00_contentPlaceHolder_lblWaitlist")):
                 yes = wait.until(EC.element_to_be_clickable((By.ID, "ctl00_contentPlaceHolder_rbWaitlistYes")))
-                cont = wait.until(EC.element_to_be_clickable((By.ID, "ctl00_contentPlaceHolder_cmdContinue")))
                 yes.click()
+                cont = wait.until(EC.element_to_be_clickable((By.ID, "ctl00_contentPlaceHolder_cmdContinue")))
                 cont.click()
                 break
 
