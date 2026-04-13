@@ -22,7 +22,5 @@ Replacing "path to SIS_bot.py" with the actual path which on windows looks like 
 
 Or simply launch the ``.py`` file using Python.
 
-May not work with two-factor authentication enabled.
-
 Now, you can sit back and wait while the bot while automatically register you for all of your classes at 7:00 AM
 
