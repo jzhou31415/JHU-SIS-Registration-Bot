@@ -47,7 +47,7 @@ select_all.click()
 register_button = wait.until(EC.element_to_be_clickable((By.ID, "ctl00_contentPlaceHolder_ibEnroll")))
 while True:
     curr_time = datetime.datetime.now()
-    time = "Waiting... \nCurrent Time:" + curr_time.strftime('%B-%d-%Y %H:%M:%S') + "\nWaiting until:" + registration_time.strftime('%B-%d-%Y %H:%M:%S')
+    time = "Waiting... \nCurrent Time: " + curr_time.strftime('%B-%d-%Y %H:%M:%S') + "\nWaiting until: " + registration_time.strftime('%B-%d-%Y %H:%M:%S')
     print("\033[H\033[J", end="")
     print(time, end="\r")
     try:
