@@ -17,8 +17,6 @@ def login_sis(driver, username, password, authentication):
     user_elem.clear()
     user_elem.send_keys(username)
     user_elem.send_keys(Keys.RETURN)
-    # submit_btn = driver.find_element(By.ID, "idSIButton9") 
-    # submit_btn.click()
     pass_elem = wait.until(EC.element_to_be_clickable((By.ID, "i0118"))) 
     pass_elem.clear()
     pass_elem.send_keys(password)
@@ -31,9 +29,12 @@ def login_sis(driver, username, password, authentication):
 username = input("your jhu username <jhed@jh.edu>: ")
 password = getpass("your jhu password (password will not appear on screen): ")
 authentication = input("the 2FA code in your authenticator app for SIS: ")
+registration_date = input("the date of your registration in (MM/DD/YYYY) format: ")
+list = registration_date.split("/")
 
-#7:00.00 AM Registration Time, set your timezone to EST with Naval Clock
-registration_time = datetime.datetime.combine(datetime.date.today(), datetime.time(hour=7,minute=0, second=0, microsecond=15))
+# 7:00.00 AM Registration Time, set your timezone to EST with Naval Clock
+#registration_time = datetime.datetime.combine(datetime.date.today(), datetime.time(hour=7,minute=0, second=0, microsecond=15))
+registration_time = datetime.datetime(int(list[0]), int(list[1]), int(list[2]), hour = 7, minute = 0, second = 0, microsecond = 15)
 options = webdriver.ChromeOptions()
 options.add_experimental_option("detach", True)
 driver = webdriver.Chrome(options=options)
@@ -63,6 +64,3 @@ while True:
                 cont = wait.until(EC.element_to_be_clickable((By.ID, "ctl00_contentPlaceHolder_cmdContinue")))
                 cont.click()
                 break
-
-
-
