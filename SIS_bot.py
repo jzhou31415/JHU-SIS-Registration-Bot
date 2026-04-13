@@ -33,7 +33,6 @@ authentication = input("the 2FA code in your authenticator app for SIS: ")
 list = registration_date.split("/")
 
 # 7:00.00 AM Registration Time, set your timezone to EST with Naval Clock
-#registration_time = datetime.datetime.combine(datetime.date.today(), datetime.time(hour=7,minute=0, second=0, microsecond=15))
 registration_time = datetime.datetime(int(list[2]), int(list[0]), int(list[1]), hour = 7, minute = 0, second = 0, microsecond = 15)
 options = webdriver.ChromeOptions()
 options.add_experimental_option("detach", True)
