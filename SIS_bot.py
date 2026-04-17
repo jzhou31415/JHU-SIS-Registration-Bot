@@ -21,15 +21,16 @@ def login_sis(driver, username, password, authentication):
     pass_elem.clear()
     pass_elem.send_keys(password)
     pass_elem.send_keys(Keys.RETURN)
-    fa_elem = wait.until(EC.element_to_be_clickable((By.ID, "idTxtBx_SAOTCC_OTC")))
-    fa_elem.clear()
-    fa_elem.send_keys(authentication)
-    fa_elem.send_keys(Keys.RETURN)
+    if (len(authentication) != 0):
+        fa_elem = wait.until(EC.element_to_be_clickable((By.ID, "idTxtBx_SAOTCC_OTC")))
+        fa_elem.clear()
+        fa_elem.send_keys(authentication)
+        fa_elem.send_keys(Keys.RETURN)
 
 username = input("your jhu username <jhed@jh.edu>: ")
 password = getpass("your jhu password (password will not appear on screen): ")
 registration_date = input("the date of your registration in (MM/DD/YYYY) format: ")
-authentication = input("the 2FA code in your authenticator app for SIS: ")
+authentication = input("the 2FA code in your authenticator app for SIS (skip if you're using a different 2-FA method by hitting enter): ")
 list = registration_date.split("/")
 
 # 7:00.00 AM Registration Time, set your timezone to EST with Naval Clock
