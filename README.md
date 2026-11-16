@@ -1,5 +1,5 @@
 # JHU SIS Registration Bot
-Up to date Selenium based registration bot for JHU SIS course registration, registering for courses right as the clock turns 7:00 AM. This bot will also add you to any waitlist for classes that are unavailable.
+Up to date Selenium based registration bot for JHU SIS course registration, registering for courses right as the clock turns 7:00 AM. This bot will also add you to any waitlist for classes that are unavailable. Tested on Windows 11 + Chrome.
 
 ⚠️ Currently only automatically signs you in if you have an authentication app for 2-FA, if you have mobile authentication, you will need to sign in manually after the bot runs but then everything else will be automatic.
 ## Setup
@@ -11,7 +11,7 @@ Run the following in Powershell/Command Terminal (Windows) or Terminal (MacOS):
 
 Make sure your Google Chrome is also up to date. Then download the file ``SIS_bot.py`` . Next we have to change our computer's clock to be in sync with US Naval Time which is what SIS uses.
 1. Go to settings and then date & time settings
-2. Change the Time Server (under 'Sync Now' for Windows) from the default to ``tick.usno.navy.mil``
+2. Change the Time Server (under 'Sync Now' for Windows) from the default to ``ntp1.jhu.edu``
 3. Save changes and exit
 
 ## Usage
