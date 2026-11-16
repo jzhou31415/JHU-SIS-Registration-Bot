@@ -34,14 +34,14 @@ authentication = input("the 2FA code in your authenticator app for SIS (skip if 
 list = registration_date.split("/")
 
 # 7:00.00 AM Registration Time, set your timezone to EST with Naval Clock
-registration_time = datetime.datetime(int(list[2]), int(list[0]), int(list[1]), hour = 7, minute = 0, second = 0, microsecond = 20)
+registration_time = datetime.datetime(int(list[2]), int(list[0]), int(list[1]), hour = 7, minute = 0, second = 0, microsecond = 100)
 options = webdriver.ChromeOptions()
 options.add_experimental_option("detach", True)
 driver = webdriver.Chrome(options=options)
 wait = WebDriverWait(driver, 30)
 login_sis(driver, username, password, authentication)
 wait.until(lambda d : d.find_element(By.ID, "img-jhu-shield-only"))
-driver.get("https://sis.jhu.edu/sswf/SSS/EnrollmentCart/SSS_EnrollmentCart.aspx?MyIndex=88199")
+driver.get("https://sis.jhu.edu/sswf/SSS/EnrollmentCart/SSS_EnrollmentCart.aspx")
 select_all = wait.until(EC.element_to_be_clickable((By.ID, "SelectAllCheckBox")))
 select_all.click()
 register_button = wait.until(EC.element_to_be_clickable((By.ID, "ctl00_contentPlaceHolder_ibEnroll")))
@@ -56,8 +56,8 @@ while True:
     except:
         pass
     if curr_time >= registration_time:
-        print("Registering")
         register_button.click()
+        print("Registering")
         while True:
             if (driver.find_element(By.ID, "ctl00_contentPlaceHolder_lblWaitlist")):
                 yes = wait.until(EC.element_to_be_clickable((By.ID, "ctl00_contentPlaceHolder_rbWaitlistYes")))
