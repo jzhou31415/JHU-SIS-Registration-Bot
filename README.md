@@ -16,7 +16,7 @@ Make sure your Google Chrome is also up to date. Then download the file ``SIS_bo
 Alternatively use these commands (may need administrator access):
 ```
 w32tm /config /manualpeerlist:"ntp1.jhu.edu,0x8" /syncfromflags:manual /reliable:YES /update
-net stop w32time && net start w32time
+net stop w32time ; net start w32time
 w32tm /resync /force
 w32tm /query /source #Verify the server changed
 ```
