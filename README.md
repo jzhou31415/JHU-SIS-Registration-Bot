@@ -13,7 +13,13 @@ Make sure your Google Chrome is also up to date. Then download the file ``SIS_bo
 1. Go to settings and then date & time settings
 2. Change the Time Server (under 'Sync Now' for Windows) from the default to ``ntp1.jhu.edu``
 3. Save changes and exit
-
+Alternatively use these commands (may need administrator access):
+```
+w32tm /config /manualpeerlist:"ntp1.jhu.edu,0x8" /syncfromflags:manual /reliable:YES /update
+net stop w32time && net start w32time
+w32tm /resync /force
+w32tm /query /source #Verify the server changed
+```
 ## Usage
 Make sure all of your classes are already in your SIS cart before using. Then run the following command in Command Prompt/Terminal on registration day at least 3 minute (ideally 5 minutes) before 7:00 AM on registration day. Can also be run multiple hours/days before registration as long as the computer it is running on never goes to sleep/powers off in between.
 
