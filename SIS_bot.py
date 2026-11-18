@@ -145,7 +145,7 @@ def main():
 
     month, day, year = (int(p) for p in registration_date.split("/"))
     # 7:00 AM registration time in your computer's local clock
-    registration_time = datetime.datetime(year, month, day, 8, 37, 0)
+    registration_time = datetime.datetime(year, month, day, 7, 0, 0)
 
     # Everything above happens once; from here we split into concurrent processes.
     workers = [
